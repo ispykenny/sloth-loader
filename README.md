@@ -25,26 +25,32 @@ import Lazyload from 'sloth-loader/index.vue';
 
 # Component Props
 
-### src String
+### src 
+###### Prop type: String
 ###### Required: true
 value of image source
 
-### omitAspect String
+### omitAspect 
+###### Prop type: String
 ###### Required: false
 Use this to avoid maintaining the set or default aspect ratio of your image if you dont want to define an aspect ratio for your image with the height/width props.
 
-### width Number
+### width 
+###### Prop type: Number
 ###### Required: false
 If using width, then the height prop is also required to generate an aspect ratio for the image parent.
 
-### height Number
+### height 
+###### Prop type: Number
 ###### Required: false
 If using height, then the width prop is also required to generate an aspect ratio for the image parent.
 
-### loadWhen Number
+### loadWhen 
+###### Prop type: Number
 ###### Required: false
 Load when is the value in which your image becomes fetched. So if using the value 0.2 then your image will begin to be fetched when it is 20% visible. You can use a value between 0 - 1.0. Leaving this blank will default to 0.5
 
-### alt String
+### alt 
+###### Prop type: String
 ###### Required: true
 Alt tag for image for accessibility
