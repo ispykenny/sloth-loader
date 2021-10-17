@@ -5,8 +5,13 @@
         <Icon/>
       </div>
       <h1>Sloth Loader</h1>
-      <p>A slick image lazy loader that maintains the height of your document while your images wait (using intersectionObserver) to be loaded. </p>
-      <Cta href="https://github.com/ispykenny/sloth-loader/blob/main/components/Slothloader.vue">
+      <h4>By <a style="color: black;" href="https://twitter.com/ispykenny" target="_blank"
+        rel="noopener">@ispykenny</a></h4>
+      <p>A slick image lazy loader <strong>Vue Component</strong> that maintains the height of your document while your images wait (using intersectionObserver) to be loaded. </p>
+      <Cta 
+        href="https://github.com/ispykenny/sloth-loader/blob/main/components/Slothloader.vue" 
+        target="_blank"
+        rel="noopener">
         View Code
       </Cta>
       <h2>See it in action</h2>
@@ -78,7 +83,7 @@ body {
   }
 
   p {
-    max-width: 540px;
+    max-width: 600px;
     margin: auto;
     line-height: 1.4;
   }
@@ -106,6 +111,21 @@ h2 {
     margin-bottom: 1em;
   }
 }
+
+.lazy-to-vue-loader {
+
+  img {
+    opacity: 0;
+    transition: opacity 800ms ease;
+  }
+
+  &.loaded {
+    img {
+      opacity: 1;
+    }
+  }
+}
+
 
 @media(min-width: 600px) {
   .images {

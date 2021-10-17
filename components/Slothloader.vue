@@ -2,12 +2,13 @@
   <div 
     ref="imageParent" 
     class="lazy-to-vue-loader"
-    v-bind:class="isLoaded ? 'loaded': ''"
+    v-bind:class="isLoaded ? 'loaded' : '' "
     :style="`padding-bottom:${height/width * 100}%`"
-    >
+  >
     <img 
       ref="imageElement"
-      :src=imageSrc />
+      :src=imageSrc 
+    />
   </div>
 </template>
 
@@ -77,11 +78,5 @@ export default {
     height: 100%;
     position: absolute;
     top: 0; left: 0;
-    opacity: 0;
-    transition: opacity 1500ms ease;
-  }
-
-  .lazy-to-vue-loader.loaded img {
-    opacity: 1;
   }
 </style>
