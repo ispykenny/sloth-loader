@@ -1,0 +1,20 @@
+@import './vars';
+
+body {
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+}
+
+.inner {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.sr-only {
+  position: absolute !important;
+  height: 1px; width: 1px; 
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
