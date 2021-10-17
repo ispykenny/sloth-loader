@@ -2,8 +2,8 @@
   <div 
     ref="imageParent" 
     class="lazy-to-vue-loader"
-    v-bind:class="isLoaded ? 'loaded' : '' "
-    :style="`padding-bottom:${height/width * 100}%`"
+    v-bind:class="classes"
+    :style="paddingBottom"
   >
     <img 
       ref="imageElement"
@@ -18,6 +18,10 @@ export default {
     src: {
       type: String,
       default: null
+    },
+    omitAspect: {
+      type: Boolean,
+      default: false
     },
     height: {
       type: Number,
@@ -38,8 +42,24 @@ export default {
   },
   data() {
     return {
-      isLoaded: false,
+      isLoaded: '',
       imageSrc: ''
+    }
+  },
+  computed: {
+    classes() {
+      const allClasses = [this.isLoaded];
+      if(this.$props.omitAspect) {
+        allClasses.push('no-padding')
+      }
+      return [...allClasses]
+    },
+    paddingBottom() {
+      if(this.$props.omitAspect) {
+        return ''
+      } else {
+        return `padding-bottom: ${this.$props.height/this.$props.width * 100}%`
+      }s
     }
   },
   mounted() {
@@ -57,7 +77,7 @@ export default {
         newImage.src = this.$props.src;
         newImage.onload = () => {
           this.imageSrc = newImage.src
-          this.isLoaded = true
+          this.isLoaded = 'loaded'
         }
       }
       observer.unobserve(element[0].target)
@@ -73,10 +93,14 @@ export default {
     position: relative;
   }
 
-  .lazy-to-vue-loader img {
+  .lazy-to-vue-loader:not(.no-padding) img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0; left: 0;
+  }
+
+  .lazy-to-vue-loader.no-padding img {
+    width: 100%;
   }
 </style>

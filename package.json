@@ -1,8 +1,11 @@
 {
   "name": "sloth-loader",
   "author": "Kenny Krosky",
-  "version": "1.0.0",
-  "main": "/components/slothloader.vue",
+  "version": "1.0.3",
+  "main": "/Slothloader.vue",
+  "browser": {
+    "./sfc": "components/Slothloader.vue"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -14,9 +17,10 @@
     "url": "git+https://github.com/ispykenny/sloth-loader.git"
   },
   "dependencies": {
-    "core-js": "^3.15.1",
     "@nuxtjs/robots": "^2.5.0",
-    "nuxt": "^2.15.7"
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7",
+    "sloth-loader": "^1.0.1"
   },
   "devDependencies": {
     "@nuxtjs/style-resources": "^1.2.1",

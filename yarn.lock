@@ -7419,6 +7419,15 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
+sloth-loader@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sloth-loader/-/sloth-loader-1.0.1.tgz#d715b722baf9dc94db62a946fbb083c73f4b2839"
+  integrity sha512-1Bi9S60lLGZyV7a+y5bt9Rk+7L6CQ/DyHSl7xGnunY0By3vOs9H/HyROzoytS0oiENJHrRiNQtGLyA1y0DUYfg==
+  dependencies:
+    "@nuxtjs/robots" "^2.5.0"
+    core-js "^3.15.1"
+    nuxt "^2.15.7"
+
 snapdragon-node@^2.0.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/snapdragon-node/-/snapdragon-node-2.1.1.tgz#6c175f86ff14bdb0724563e8f3c1b021a286853b"
