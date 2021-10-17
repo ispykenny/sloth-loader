@@ -6,7 +6,7 @@
       </div>
       <h1>Sloth Loader</h1>
       <p>A slick image lazy loader that maintains the height of your document while your images wait (using intersectionObserver) to be loaded. </p>
-      <Cta href="https://github.com">
+      <Cta href="https://github.com/ispykenny/sloth-loader/blob/main/components/Slothloader.vue">
         View Code
       </Cta>
       <h2>See it in action</h2>
