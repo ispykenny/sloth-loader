@@ -112,7 +112,7 @@ h2 {
   }
 }
 
-.lazy-to-vue-loader {
+.sloth-loader {
 
   img {
     opacity: 0;

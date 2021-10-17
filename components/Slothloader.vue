@@ -1,7 +1,7 @@
 <template>
   <div 
     ref="imageParent" 
-    class="lazy-to-vue-loader"
+    class="sloth-loader"
     v-bind:class="classes"
     :style="paddingBottom"
   >
@@ -89,18 +89,18 @@ export default {
 </script>
 
 <style>
-  .lazy-to-vue-loader {
+  .sloth-loader {
     position: relative;
   }
 
-  .lazy-to-vue-loader:not(.no-padding) img {
+  .sloth-loader:not(.no-padding) img {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0; left: 0;
   }
 
-  .lazy-to-vue-loader.no-padding img {
+  .sloth-loader.no-padding img {
     width: 100%;
   }
 </style>

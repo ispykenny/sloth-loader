@@ -10,11 +10,13 @@
     </div>
     <div class="inner prop-options">
       <h1>Props</h1>
-      <div class="prop" v-for="(option, index) in options" :key="index">
-        <h2>{{option.prop}} <span>{{option.type}}</span></h2>
-        <small>Required: <strong>{{option.required}}</strong></small>
-        <p v-html="option.details"></p>
-      </div>
+      <ul>
+        <li class="prop" v-for="(option, index) in options" :key="index">
+          <h2>{{option.prop}} <span>{{option.type}}</span></h2>
+          <small>Required: <strong>{{option.required}}</strong></small>
+          <p v-html="option.details"></p>
+        </li>
+      </ul>
     </div>
   </section>
 </template>
