@@ -1,5 +1,5 @@
 <template>
-  <svg xmlns="http://www.w3.org/2000/svg" width="96" height="76.877" viewBox="0 0 96 76.877">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 76.877">
   <g id="noun_Sloth_930987" transform="translate(-2 -11.528)">
     <g id="Group_6" data-name="Group 6">
       <path id="Path_2" data-name="Path 2" d="M19,20.9,2,22.6V38.9l8.5-.9A81.025,81.025,0,0,1,19,20.9Z"/>

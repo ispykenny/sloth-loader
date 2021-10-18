@@ -1,19 +1,19 @@
 <template>
-  <a target="_blank" class="cta">
+  <nuxt-link :to=Linkhref class="cta">
     <slot/>
-  </a>
+  </nuxt-link>
 </template>
 
 <script>
 export default {
-
+  props:["Linkhref"]
 }
 </script>
 
 <style lang="scss">
   .cta {
     background: $green;
-    color: #000;
+    color: #fff;
     display: inline-block;
     font-weight: 700;
     padding: 0.8em 2em;

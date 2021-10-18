@@ -1,18 +1,17 @@
 <template>
   <section class="hero">
     <div class="inner">
-      <div class="hero__logo">
-        <Icon/>
-      </div>
       <h1>Sloth Loader</h1>
-      <h4>By <a style="color: black;" href="https://twitter.com/ispykenny" target="_blank"
-        rel="noopener">@ispykenny</a></h4>
       <p>A slick image lazy loader <strong>Vue Component</strong> that maintains the height of your document while your images wait (using intersectionObserver) to be loaded. </p>
+      <div style="margin-top:1em;">
+        <strong>Download</strong>: <pre><code>yarn add sloth-loader</code></pre>
+      </div>
+      <div style="margin-top:1em;">
+        <strong>Import component</strong>: <pre><code>import Slothloader from 'sloth-loader/index.vue'</code></pre>
+      </div>
       <Cta 
-        href="https://github.com/ispykenny/sloth-loader/blob/main/components/Slothloader.vue" 
-        target="_blank"
-        rel="noopener">
-        View Code
+        Linkhref="/options">
+        View Options
       </Cta>
       <h2>See it in action</h2>
       <div class="images">
@@ -23,7 +22,6 @@
             >
             <Slothloader
               :src=images.src
-              :omitAspect=true
               :width=images.width
               :height=images.height
               :loadWhen=0.2
@@ -71,22 +69,42 @@ export default {
 <style lang="scss">
 body {
   margin: 0;
+  background: #fff;
 }
 
 .hero {
   margin-top: 3em;
   text-align: center;
 
+  a:not(.cta) {
+    color: $green;
+  }
+
+  &__logo {
+    max-width: 50px;
+    fill: $green;
+
+    svg {
+      width: 100% !important;
+    }
+  }
+
   h1 {
     font-size: 32px;
-    margin-bottom: 0.2em;
+    margin-bottom: 0.5em;
   }
 
   p {
     max-width: 600px;
     margin: auto;
+    font-size: 16px;
     line-height: 1.4;
   }
+}
+
+code {
+  background: #f1f1f1;
+  padding: 0.5em;
 }
 
 .cta {
