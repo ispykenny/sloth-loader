@@ -38,7 +38,7 @@ export default {
   font-size: 14px;
   text-align: right;
   a {
-    color: $green;
+    color: black;
     display: inline-block;
     text-decoration: none;
     font-weight: 800;

@@ -7,7 +7,8 @@
   >
     <img 
       ref="imageElement"
-      :src=imageSrc 
+      :src=imageSrc
+      :alt=alt
     />
   </div>
 </template>
