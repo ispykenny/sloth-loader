@@ -10,7 +10,7 @@
         <strong>Import component</strong>: <pre><code>import Slothloader from 'sloth-loader/index.vue'</code></pre>
       </div>
       <Cta 
-        href="https://www.npmjs.com/package/sloth-loader#user-content-use-in-component"
+        href="https://www.npmjs.com/package/sloth-loader#use-in-component"
         target="_blank"
         rel="noopener"
       >
