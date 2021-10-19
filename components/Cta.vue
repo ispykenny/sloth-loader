@@ -1,7 +1,7 @@
 <template>
-  <nuxt-link :to=Linkhref class="cta">
+  <a class="cta">
     <slot/>
-  </nuxt-link>
+  </a>
 </template>
 
 <script>
@@ -12,8 +12,8 @@ export default {
 
 <style lang="scss">
   .cta {
-    background: $green;
-    color: #fff;
+    background: #eee;
+    color: black;
     display: inline-block;
     font-weight: 700;
     padding: 0.8em 2em;
@@ -22,7 +22,7 @@ export default {
     border-radius: 3px;
 
     &:hover {
-      background: darken($green, 5%);
+      background: darken(#eee, 5%);
     }
   }
 </style>

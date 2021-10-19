@@ -10,7 +10,10 @@
         <strong>Import component</strong>: <pre><code>import Slothloader from 'sloth-loader/index.vue'</code></pre>
       </div>
       <Cta 
-        Linkhref="/options">
+        href="https://www.npmjs.com/package/sloth-loader#user-content-use-in-component"
+        target="_blank"
+        rel="noopener"
+      >
         View Options
       </Cta>
       <h2>See it in action</h2>
@@ -71,7 +74,9 @@ body {
   margin: 0;
   background: #fff;
 }
-
+.sloth-loader {
+  background: #eee;
+}
 .hero {
   margin-top: 3em;
   text-align: center;
