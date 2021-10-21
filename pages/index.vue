@@ -24,6 +24,7 @@
             :key="index"
             >
             <Slothloader
+              :fadeIn=true
               :src=images.src
               :width=images.width
               :height=images.height
