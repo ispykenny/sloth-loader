@@ -30,7 +30,13 @@ export default {
           prop: 'src',
           required: true,
           type: 'String',
-          details: 'value of image source'
+          details: 'value of image source.'
+        },
+        {
+          prop: 'fadeIn',
+          required: false,
+          type: 'Boolean',
+          details: 'set prop to true if you want image to have a transitional fade-in on load.'
         },
         {
           prop: 'omitAspect',
@@ -54,13 +60,13 @@ export default {
           prop: 'loadWhen',
           required: false,
           type: 'Number',
-          details: 'Load when is the value in which your image becomes fetched. So if using the value 0.2 then your image will begin to be fetched when it is 20% visible. You can use a value between 0 - 1.0. Leaving this blank will default to 0.5'
+          details: 'Load when is the value in which your image becomes fetched. So if using the value 0.2 then your image will begin to be fetched when it is 20% visible. You can use a value between 0 - 1.0. Leaving this blank will default to 0.5.'
         },
         {
           prop: 'alt',
           required: true,
           type: 'String',
-          details: 'Alt tag for image for accessibility'
+          details: 'Alt tag for image accessibility.'
         },
       ]
     }
