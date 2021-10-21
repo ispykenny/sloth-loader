@@ -8,17 +8,17 @@
 
 ## import component
 ```
-import Lazyload from 'sloth-loader/index.vue';
+import Slothloader from 'sloth-loader/index.vue';
 ```
 ## use in component
 ```
 <Slothloader
+  :fadeIn=true
   :width=1000
   :height=1000
   :omitAspect=false
   :src=src
   :loadWhen=0.2
-  loadedClass="loaded"
   alt="Loaded image"
 />
 ```
@@ -29,6 +29,10 @@ import Lazyload from 'sloth-loader/index.vue';
 ###### Prop type: String
 ###### Required: true
 value of image source
+### fadeIn 
+###### Prop type: Boolean
+###### Required: false
+set prop to true if you want image to have a transitional fade-in on load.
 
 ### omitAspect 
 ###### Prop type: String
