@@ -38,6 +38,7 @@
             :key="`${index}-b`"
             >
             <Slothloader
+              :fadeIn=true
               :src=images.src
               :width=images.width
               :height=images.height
@@ -135,19 +136,6 @@ h2 {
   }
 }
 
-.sloth-loader {
-
-  img {
-    opacity: 0;
-    transition: opacity 800ms ease;
-  }
-
-  &.loaded {
-    img {
-      opacity: 1;
-    }
-  }
-}
 
 
 @media(min-width: 600px) {
